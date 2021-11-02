@@ -1,4 +1,5 @@
-import styles from './styles.module.scss'
+import styles from './header.module.scss'
+import { SignInTrigger } from './SignInTrigger' 
 
 export function Header () {
     return (
@@ -9,6 +10,7 @@ export function Header () {
                     <a className={styles.active}>Home</a>
                     <a>Posts</a>
                 </nav>
+                <SignInTrigger />
             </div>
         </header>
     )
