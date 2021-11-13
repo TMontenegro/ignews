@@ -1,6 +1,10 @@
 import styles from './subscribeTrigger.module.scss'
 
-export function SubscribeTrigger () {
+interface SubscribeTriggerProps {
+    priceId: string
+}
+
+export function SubscribeTrigger ({ priceId } : SubscribeTriggerProps) {
     return (
         <button
             type="button"
